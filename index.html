@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#11163a">
+    <title>与核桃相伴三周年</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body class="page h5-page">
+    <main class="h5-shell" aria-live="polite">
+      <section class="screen scene launch-scene is-active" data-screen="0">
+        <img class="scene-art" src="./assets/scene-1-launch.png" alt="IP 从太空舱启航">
+        <div class="motion-layer" aria-hidden="true">
+          <span class="nebula nebula-a"></span>
+          <span class="meteor meteor-a"></span>
+          <span class="meteor meteor-b"></span>
+          <span class="planet-orbit orbit-a"></span>
+          <span class="planet-dot dot-a"></span>
+          <span class="planet-dot dot-b"></span>
+        </div>
+
+        <div class="scene-copy">
+          <p class="eyebrow">ANNIVERSARY VOYAGE</p>
+          <h1>与核桃相伴三周年</h1>
+          <p>打开舷窗，和穿上太空服的 IP 一起启航。</p>
+        </div>
+
+        <button class="space-trigger porthole-trigger" type="button" data-next aria-label="点击发光舷窗启航">
+          <span class="trigger-orbit"></span>
+          <span class="trigger-core">启航</span>
+        </button>
+
+        <p class="tap-tip">
+          <span></span>
+          点击发光舷窗，进入三周年旅程
+        </p>
+      </section>
+
+      <section class="screen scene map-scene" data-screen="1">
+        <img class="scene-art" src="./assets/scene-2-map.png" alt="IP 在星图中导航">
+        <div class="motion-layer" aria-hidden="true">
+          <span class="nebula nebula-b"></span>
+          <span class="star-path path-a"></span>
+          <span class="star-path path-b"></span>
+          <span class="floating-glyph glyph-a"></span>
+          <span class="floating-glyph glyph-b"></span>
+          <span class="floating-glyph glyph-c"></span>
+        </div>
+
+        <div class="scene-copy">
+          <p class="eyebrow">STAR MAP</p>
+          <h2>点亮周年星图</h2>
+          <p>沿着星河坐标，找到属于三周年的那颗星。</p>
+        </div>
+
+        <button class="space-trigger star-map-trigger" type="button" data-next aria-label="点击星图继续">
+          <span class="map-line line-one"></span>
+          <span class="map-line line-two"></span>
+          <span class="map-node node-one"></span>
+          <span class="map-node node-two"></span>
+          <span class="map-node node-three"></span>
+          <strong>点亮</strong>
+        </button>
+
+        <p class="tap-tip">
+          <span></span>
+          点击发光星图，继续穿越
+        </p>
+      </section>
+
+      <section class="screen scene wormhole-scene" data-screen="2">
+        <img class="scene-art" src="./assets/scene-3-wormhole.png" alt="IP 穿越温暖虫洞">
+        <div class="motion-layer" aria-hidden="true">
+          <span class="worm-ring ring-a"></span>
+          <span class="worm-ring ring-b"></span>
+          <span class="worm-ring ring-c"></span>
+          <span class="meteor meteor-c"></span>
+          <span class="asteroid asteroid-a"></span>
+          <span class="asteroid asteroid-b"></span>
+        </div>
+
+        <div class="scene-copy">
+          <p class="eyebrow">TIME TUNNEL</p>
+          <h2>穿越温暖虫洞</h2>
+          <p>三年的记忆化作光轨，带你抵达领取星站。</p>
+        </div>
+
+        <button class="space-trigger wormhole-trigger" type="button" data-next aria-label="点击虫洞继续">
+          <span class="worm-core"></span>
+          <strong>穿越</strong>
+        </button>
+
+        <p class="tap-tip">
+          <span></span>
+          点击旋转虫洞，抵达补给站
+        </p>
+      </section>
+
+      <section class="screen scene supply-scene" data-screen="3">
+        <img class="scene-art" src="./assets/scene-4-supply.png" alt="IP 抵达周年补给站">
+        <div class="motion-layer" aria-hidden="true">
+          <span class="nebula nebula-c"></span>
+          <span class="supply-beam beam-a"></span>
+          <span class="supply-beam beam-b"></span>
+          <span class="capsule-spark spark-a"></span>
+          <span class="capsule-spark spark-b"></span>
+          <span class="capsule-spark spark-c"></span>
+        </div>
+
+        <div class="scene-copy">
+          <p class="eyebrow">SUPPLY STATION</p>
+          <h2>领取周年补给</h2>
+          <p>后续可把二维码嵌入补给舱中央，员工停留在这里完成确认。</p>
+        </div>
+
+        <button class="qr-orb" type="button" data-complete aria-label="点击二维码区域确认领取">
+          <span class="qr-scan"></span>
+          <span class="qr-grid" aria-hidden="true"></span>
+          <strong>二维码预留</strong>
+          <em>点击确认领取</em>
+        </button>
+
+        <button class="space-trigger capsule-trigger" type="button" data-complete aria-label="点击补给舱确认领取">
+          <span class="capsule-light"></span>
+          <strong>确认领取</strong>
+        </button>
+
+        <div class="success-panel" data-success hidden>
+          <p class="eyebrow">RECEIVED</p>
+          <h2>领取确认完成</h2>
+          <p>感谢你与核桃一起走过三周年。</p>
+          <button class="replay-trigger" type="button" data-restart>再看一次旅程</button>
+        </div>
+      </section>
+
+      <div class="progress-dots" aria-hidden="true">
+        <span class="is-active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
